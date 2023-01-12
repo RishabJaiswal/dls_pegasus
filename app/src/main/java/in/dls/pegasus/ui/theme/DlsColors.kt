@@ -6,7 +6,8 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.staticCompositionLocalOf
 import androidx.compose.ui.graphics.Color
 
-internal val LocalDlsColors = staticCompositionLocalOf {  }
+internal val LocalDlsColors = staticCompositionLocalOf {}
+
 @Stable
 class DlsColors(
     titleActive: Color,
@@ -37,7 +38,7 @@ class DlsColors(
     warningDark: Color,
     warningBg: Color,
     warningLight: Color,
-    isLight: Color,
+    isLight: Boolean,
 ) {
   val titleActive by mutableStateOf(titleActive)
   val body by mutableStateOf(body)
@@ -98,7 +99,7 @@ class DlsColors(
       warningDark: Color = this.warningDark,
       warningBg: Color = this.warningBg,
       warningLight: Color = this.warningLight,
-      isLight: Color = this.isLight,
+      isLight: Boolean = this.isLight,
   ) =
       DlsColors(
           titleActive,
