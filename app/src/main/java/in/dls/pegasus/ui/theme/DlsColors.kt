@@ -3,8 +3,6 @@ package `in`.dls.pegasus.ui.theme
 import androidx.compose.runtime.*
 import androidx.compose.ui.graphics.Color
 
-internal val LocalDlsColors = staticCompositionLocalOf { lightDlsColors() }
-
 @Immutable
 data class DlsColors(
     val titleActive: Color,
