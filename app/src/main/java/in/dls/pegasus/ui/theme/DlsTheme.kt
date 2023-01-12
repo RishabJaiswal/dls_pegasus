@@ -10,12 +10,14 @@ fun DlsTheme(
     colors: DlsColors = DlsTheme.colors,
     typography: DlsTypography = DlsTheme.typography,
     spaces: DlsSpaces = DlsTheme.spaces,
+    corners: DlsCorners = DlsTheme.corners,
     content: @Composable () -> Unit,
 ) {
   CompositionLocalProvider(
       DlsThemeLocals.LocalColors provides colors,
       DlsThemeLocals.LocalTypography provides typography,
       DlsThemeLocals.LocalSpaces provides spaces,
+      DlsThemeLocals.LocalCorners provides corners,
   ) {
     content()
   }
@@ -25,6 +27,7 @@ internal object DlsThemeLocals {
   val LocalColors = staticCompositionLocalOf { lightDlsColors() }
   val LocalTypography = staticCompositionLocalOf { mobileDlsTypography() }
   val LocalSpaces = staticCompositionLocalOf { mobileDlsSpaces() }
+  val LocalCorners = staticCompositionLocalOf { mobileDlsCorners() }
 }
 
 object DlsTheme {
@@ -34,4 +37,6 @@ object DlsTheme {
     @Composable @ReadOnlyComposable get() = DlsThemeLocals.LocalTypography.current
   val spaces: DlsSpaces
     @Composable @ReadOnlyComposable get() = DlsThemeLocals.LocalSpaces.current
+  val corners: DlsCorners
+    @Composable @ReadOnlyComposable get() = DlsThemeLocals.LocalCorners.current
 }
