@@ -8,7 +8,7 @@ import androidx.compose.runtime.staticCompositionLocalOf
 @Composable
 fun DlsTheme(
     colors: DlsColors = DlsTheme.colors,
-    typography: DlsTypography,
+    typography: DlsTypography = DlsTheme.typography,
     content: @Composable () -> Unit,
 ) {
   CompositionLocalProvider(
