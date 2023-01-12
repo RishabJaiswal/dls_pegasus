@@ -13,34 +13,34 @@ fun lightDlsColors(
     offWhite: Color = Grey100,
 
     //primary
-    primaryDefault: Color = Violet500,
-    primaryDark: Color = Violet500,
-    primaryLight: Color = Violet500,
-    primaryBg: Color = Violet500,
+    primaryDefault: Color = Purple500,
+    primaryDark: Color = Purple800,
+    primaryLight: Color = Purple50,
+    primaryBg: Color = Purple25,
 
     //secondary
-    secondaryDefault: Color = Violet500,
-    secondaryDark: Color = Violet500,
-    secondaryBg: Color = Violet500,
-    secondaryLight: Color = Violet500,
+    secondaryDefault: Color = Blue500,
+    secondaryDark: Color = Blue800,
+    secondaryLight: Color = Blue50,
+    secondaryBg: Color = Blue25,
 
     //error
-    errorDefault: Color = Violet500,
-    errorDark: Color = Violet500,
-    errorBg: Color = Violet500,
-    errorLight: Color = Violet500,
+    errorDefault: Color = Pink500,
+    errorDark: Color = Pink800,
+    errorLight: Color = Pink50,
+    errorBg: Color = Pink25,
 
     //success
-    successDefault: Color = Violet500,
-    successDark: Color = Violet500,
-    successBg: Color = Violet500,
-    successLight: Color = Violet500,
+    successDefault: Color = Green500,
+    successDark: Color = Green800,
+    successBg: Color = Green50,
+    successLight: Color = Green25,
 
     //warning
-    warningDefault: Color = Violet500,
-    warningDark: Color = Violet500,
-    warningBg: Color = Violet500,
-    warningLight: Color = Violet500,
+    warningDefault: Color = Yellow500,
+    warningDark: Color = Yellow800,
+    warningBg: Color = Yellow50,
+    warningLight: Color = Yellow25,
 ) =
     DlsColors(
         titleActive = titleActive,
