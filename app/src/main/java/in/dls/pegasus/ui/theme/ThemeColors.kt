@@ -1,6 +1,6 @@
 package `in`.dls.pegasus.ui.theme
 
-fun lightDlsColors() =
+internal fun lightDlsColors() =
     DlsColors(
         isLight = true,
         titleActive = Grey800,
@@ -43,7 +43,7 @@ fun lightDlsColors() =
         warningLight = Yellow25,
     )
 
-fun darkDlsColors() =
+internal fun darkDlsColors() =
     DlsColors(
         isLight = false,
         titleActive = Grey800,

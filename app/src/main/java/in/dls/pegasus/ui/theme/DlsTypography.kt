@@ -36,7 +36,7 @@ data class DlsTypography(
     val linkXSmall: TextStyle,
 )
 
-fun mobileDlsTypography() =
+internal fun mobileDlsTypography() =
     DlsTypography(
         displayLarge =
             TextStyle(
