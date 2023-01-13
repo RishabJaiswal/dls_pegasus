@@ -1,8 +1,10 @@
 package `in`.dls.pegasus.theme
 
 import androidx.compose.foundation.shape.CornerSize
+import androidx.compose.runtime.Immutable
 import androidx.compose.ui.unit.dp
 
+@Immutable
 data class DlsCorners(
     val small: CornerSize,
     val medium: CornerSize,

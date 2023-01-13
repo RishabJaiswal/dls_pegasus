@@ -1,8 +1,10 @@
 package `in`.dls.pegasus.theme
 
+import androidx.compose.runtime.Immutable
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 
+@Immutable
 data class DlsSpaces(
     val xxs: Dp,
     val xs: Dp,
