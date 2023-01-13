@@ -13,7 +13,7 @@ import androidx.compose.ui.unit.dp
 @Preview
 @Composable
 fun DlsSubtleButton(
-    text: String = "Button",
+    text: String = "",
     size: DlsButtonSize = DlsButtonSize.MEDIUM,
     onClick: () -> Unit = {}
 ) {
