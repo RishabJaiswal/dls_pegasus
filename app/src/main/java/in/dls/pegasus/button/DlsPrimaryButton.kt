@@ -1,11 +1,11 @@
 package `in`.dls.pegasus.button
 
+import `in`.dls.pegasus.theme.DlsTheme
 import androidx.compose.material.Button
 import androidx.compose.material.ButtonDefaults
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
-import `in`.dls.pegasus.theme.DlsTheme
 
 @Preview
 @Composable
@@ -26,7 +26,7 @@ fun DlsPrimaryButton(
         Text(
             text = text,
             color = DlsTheme.colors.background,
-            style = DlsButtonStyle.textStyle(),
+            style = DlsButtonStyle.textStyle(size),
         )
       },
   )
