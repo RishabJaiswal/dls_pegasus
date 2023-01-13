@@ -16,17 +16,17 @@ fun DlsPrimaryButton(
 ) {
   Button(
       onClick = onClick,
-      contentPadding = size.getButtonPadding(),
+      contentPadding = DlsButtonStyle.getButtonPadding(size),
       shape = DlsButtonStyle.shape,
       colors =
-          ButtonDefaults.buttonColors(
-              backgroundColor = DlsTheme.colors.primaryDefault,
-          ),
+      ButtonDefaults.buttonColors(
+          backgroundColor = DlsTheme.colors.primaryDefault,
+      ),
       content = {
-        Text(
-            text = text,
-            color = DlsTheme.colors.background,
-            style = DlsButtonStyle.textStyle(size),
+          Text(
+              text = text,
+              color = DlsTheme.colors.background,
+              style = DlsButtonStyle.textStyle(size),
         )
       },
   )

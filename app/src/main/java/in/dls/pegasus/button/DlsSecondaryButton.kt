@@ -19,17 +19,17 @@ fun DlsSecondaryButton(
 ) {
   OutlinedButton(
       onClick = onClick,
-      contentPadding = size.getButtonPadding(),
+      contentPadding = DlsButtonStyle.getButtonPadding(size),
       shape = DlsButtonStyle.shape,
       colors =
-          ButtonDefaults.outlinedButtonColors(
-              backgroundColor = Color.Transparent,
-          ),
+      ButtonDefaults.outlinedButtonColors(
+          backgroundColor = Color.Transparent,
+      ),
       border =
-          BorderStroke(
-              width = 2.dp,
-              color = DlsTheme.colors.primaryDefault,
-          ),
+      BorderStroke(
+          width = 2.dp,
+          color = DlsTheme.colors.primaryDefault,
+      ),
       content = {
         Text(
             text = text,
