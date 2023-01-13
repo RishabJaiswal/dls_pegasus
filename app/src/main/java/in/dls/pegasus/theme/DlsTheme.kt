@@ -1,4 +1,4 @@
-package `in`.dls.pegasus.ui.theme
+package `in`.dls.pegasus.theme
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider

@@ -1,4 +1,4 @@
-package `in`.dls.pegasus.ui.theme
+package `in`.dls.pegasus.theme
 
 internal fun lightDlsColors() =
     DlsColors(

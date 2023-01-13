@@ -1,4 +1,4 @@
-package `in`.dls.pegasus.ui.theme
+package `in`.dls.pegasus.theme
 
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.Font
@@ -6,6 +6,7 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 import `in`.dls.pegasus.R
+import androidx.compose.runtime.Immutable
 
 private val poppins =
     FontFamily(
@@ -15,6 +16,7 @@ private val poppins =
         Font(R.font.poppins_bold, FontWeight.Bold),
     )
 
+@Immutable
 data class DlsTypography(
     // display
     val displayLarge: TextStyle,
