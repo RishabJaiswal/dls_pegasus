@@ -27,7 +27,7 @@ fun DlsPrimaryButton(
               text = text,
               color = DlsTheme.colors.background,
               style = DlsButtonStyle.textStyle(size),
-        )
+          )
       },
   )
 }

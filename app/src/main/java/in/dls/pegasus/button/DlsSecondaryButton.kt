@@ -31,11 +31,11 @@ fun DlsSecondaryButton(
           color = DlsTheme.colors.primaryDefault,
       ),
       content = {
-        Text(
-            text = text,
-            color = DlsTheme.colors.primaryDefault,
-            style = DlsButtonStyle.textStyle(size),
-        )
+          Text(
+              text = text,
+              color = DlsTheme.colors.primaryDefault,
+              style = DlsButtonStyle.textStyle(size),
+          )
       },
   )
 }
