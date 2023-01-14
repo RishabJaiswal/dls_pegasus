@@ -23,7 +23,7 @@ fun DlsTheme(
   }
 }
 
-internal object DlsThemeLocals {
+private object DlsThemeLocals {
   val LocalColors = staticCompositionLocalOf { lightDlsColors() }
   val LocalTypography = staticCompositionLocalOf { mobileDlsTypography() }
   val LocalSpaces = staticCompositionLocalOf { mobileDlsSpaces() }
