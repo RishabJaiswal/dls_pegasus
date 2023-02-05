@@ -1,6 +1,7 @@
 package `in`.dls.pegasus.button
 
 import androidx.compose.foundation.interaction.MutableInteractionSource
+import androidx.compose.foundation.interaction.collectIsHoveredAsState
 import androidx.compose.foundation.interaction.collectIsPressedAsState
 import androidx.compose.material.Button
 import androidx.compose.material.ButtonDefaults
@@ -14,17 +15,23 @@ import `in`.dls.pegasus.theme.DlsTheme
 @Preview
 @Composable
 fun DlsPrimaryButton(
-  text: String = "",
+  text: String = "hello",
   size: DlsButtonSize = DlsButtonSize.MEDIUM,
+  isEnabled: Boolean = true,
   onClick: () -> Unit = {}
 ) {
   val interactionSource = remember { MutableInteractionSource() }
   val isPressed by interactionSource.collectIsPressedAsState()
+  val isHovered by interactionSource.collectIsHoveredAsState()
 
-  val bgColor = when {
-    isPressed -> DlsTheme.colors.titleActive
-    else -> DlsTheme.colors.primaryDefault
-  }
+  val bgColorEnabled =
+    when {
+      isPressed -> DlsTheme.colors.titleActive
+      isHovered -> DlsTheme.colors.primaryDark
+      else -> DlsTheme.colors.primaryDefault
+    }
+
+  val bgColorDisabled = DlsTheme.colors.primaryDefault.copy(alpha = 0.5f)
 
   Button(
     onClick = onClick,
@@ -33,7 +40,7 @@ fun DlsPrimaryButton(
     shape = DlsButtonStyle.shape,
     colors =
       ButtonDefaults.buttonColors(
-        backgroundColor = bgColor,
+        backgroundColor = if (isEnabled) bgColorEnabled else bgColorDisabled,
       ),
     content = {
       Text(
